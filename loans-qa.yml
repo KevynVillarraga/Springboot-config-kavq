@@ -9,7 +9,7 @@ build:
 
 #@ConfigurationProperties
 contact:
-  message: "Bank System - Account API"
+  message: "Bank System - Loan API"
   details:
     name: "Kavq - QA Tester Git Accounts"
     email: "Kavq@globalhitss.com"
