@@ -14,11 +14,25 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-    #Propiedades para SpringCloud Config
-application:
-  name: "accounts"
+  # Propiedades para SpringCloud Config
+  application:
+    name: "accounts"
   profiles:
     active: "default"
-    config:
-import: "configserver:http://localhost:8071/"
+  config:
+    import: optional:configserver:http://127.0.0.1:8071/
+
+  rabbitmq:
+    port: 5672
+    host: "localhost"
+    username: "guest"
+    password: "guest"
+
+# Activate actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+build:
+  version: "1.0.0"
