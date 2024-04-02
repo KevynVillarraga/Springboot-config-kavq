@@ -1,12 +1,12 @@
 # Property to be read from code
 build:
-  version: "v2.0"
+  version: "v3.0"
 
 #@ConfigurationProperties
 contact:
   message: "Bank System - Account API"
   details:
-    name: "Kavq - QA Tester Git Accounts"
+    name: "Kavq - default Tester Git Accounts"
     email: "Kavq@globalhitss.com"
   phone-numbers:
     -(57) 311-494-7050
